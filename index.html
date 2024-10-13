@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tech.Care Dashboard</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/TestLogo.png">
+                    <!-- <h2>Tech<span class="danger">.</span>Care</h2> -->
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <img src="images/Layer 8.png" style="width: 25%;">
+                    <h3><strong>Emily Williams</strong><br> <small>Female,18</small></h3>
+                </a>
+                <a href="#">
+                    <img src="images/Layer 1.png" style="width: 25%;">
+                    <h3><strong>Ryan Johnson</strong><br> <small>Male,45</small></h3>
+                </a>
+                <a href="#">
+                    <img src="images/Layer 3.png" style="width: 25%;">
+                    <h3><strong>Brandon Mitchell</strong><br> <small>Male,36</small></h3>
+                </a>
+                <a href="#">
+                    <img src="images/Layer 2-1.png" style="width: 25%;">
+                    <h3><strong>Jessica Taylor</strong><br> <small>Female,28</small></h3>
+                </a>
+                <a href="#">
+                    <img src="images/Layer 6.png" style="width: 25%;">
+                    <h3><strong>Samantha Johnson</strong><br> <small>Female,56</small></h3>
+                </a>
+                <a href="#">
+                    <img src="images/Layer 12.png" style="width: 25%;">
+                    <h3><strong>Ashley Martinez</strong><br> <small>Female,54</small></h3>
+                </a>
+                <a href="#">
+                    <img src="images/Layer 10.png" style="width: 25%;">
+                    <h3><strong>Olivia Brown</strong><br> <small>Female,32</small></h3>
+                </a>
+                <a href="#">
+                    <img src="images/Layer 9.png" style="width: 25%;">
+                    <h3><strong>Tyler Davis</strong><br> <small>Male 19</small></h3>
+                </a>
+                <a href="#">
+                    <img src="images/Layer 4.png" style="width: 25%;">
+                    <h3><strong>Kevin Anderson</strong><br> <small>Male,30</small></h3>
+                </a>
+                <a href="#">
+                    <img src="images/Layer 5.png" style="width: 25%;">
+                    <h3><strong>Dylan Thompson</strong><br> <small>Male,36</small></h3>
+                </a>
+                <a href="#">
+                    <img src="images/Layer 7.png" style="width: 25%;">
+                    <h3><strong>Nathan Evans</strong><br> <small>Male,58</small></h3>
+                </a>
+
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <!-- Nav -->
+            <div class="new-users">
+                <div class="user-list">
+                    <div class="user">
+                        <a href="#"><h3>Overview</h3></a>
+                    </div>
+                    <div class="user">
+                        <a href="#"><h3>Patients</h3></a>
+                    </div>
+                    <div class="user">
+                        <a href="#"><h3>Schedule</h3></a>
+                    </div>
+                    <div class="user">
+                        <a href="#"><h3>Messages</h3></a>
+                    </div>
+                    <div class="user">
+                        <a href="#"><h3>Transactions</h3></a>
+                    </div>
+                </div>
+            </div><br>
+            <!-- End of Nav -->
+
+            <h2>Diagnosis History</h2>
+            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+            <!-- Analyses -->
+            <div class="analyse">
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Resp. Rate</h3>
+                            <h1>20 bpm</h1>
+                        </div>
+                        <div class="progresss">
+                            <img src="images/respiratory rate@2x.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="visits">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Temperature</h3>
+                            <h1>98.6`F</h1>
+                        </div>
+                        <div class="progresss">
+                            <img src="images/temperature@2x.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="searches">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Heart Rate</h3>
+                            <h1>78 bpm</h1>
+                        </div>
+                        <div class="progresss">
+                            <img src="images/HeartBPM@2x.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Analyses -->
+
+            <!-- Recent Orders Table -->
+            <div class="recent-orders">
+                <h2>Diagnostic List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Diagnosis</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+            <!-- End of Recent Orders -->
+
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="profile-photo">
+                        <img src="images/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png">
+                    </div>
+                    <div class="info">
+                        <p><b>Dr. Jose Simmons</b></p>
+                        <small class="text-muted">General Practitioner</small>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="images/Layer 2@2x.png">
+                    <h2>Jessica Taylor</h2>
+                    <br>
+                    <h3>Date of Birth</h3>
+                    <p>August 23, 1996</p>
+                    <br>
+                    <h3>Gender</h3>
+                    <p>Female</p>
+                    <br>
+                    <h3>Contact Info</h3>
+                    <p>(415) 555-1234</p>
+                    <br>
+                    <h3>Emergency Contact</h3>
+                    <p>(415) 555-5678</p>
+                    <br>
+                    <h3>Insurance Provider</h3>
+                    <p>Sunrise Health Assurance</p>
+                </div>
+            </div>
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Lab Results</h2>
+                    <span class="material-icons-sharp">
+                        book
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <div class="content">
+                        <div class="info">
+                            <h3>Blood Tests</h3>
+                        </div>
+                        <span class="material-icons-sharp">
+                            download
+                        </span>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="content">
+                        <div class="info">
+                            <h3>CT Scans</h3>
+                        </div>
+                        <span class="material-icons-sharp">
+                            download
+                        </span>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="content">
+                        <div class="info">
+                            <h3>Radiology Reports</h3>
+                        </div>
+                        <span class="material-icons-sharp">
+                            download
+                        </span>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="content">
+                        <div class="info">
+                            <h3>X-Rays</h3>
+                        </div>
+                        <span class="material-icons-sharp">
+                            download
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification add-reminder">
+                    <div>
+                        <span class="material-icons-sharp">
+                            add
+                        </span>
+                        <h3>Add</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="orders.js"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+</body>
+
+</html>
